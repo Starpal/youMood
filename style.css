@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Condiment|Courgette|ZCOOL+QingKe+HuangYou&display=swap');
+#nav{
+  background-color: rgba(149, 216, 179, 0.8)
+}
+
+
+.mask{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+.view {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+
+/*
+.mask > h1{
+  font-size: 100px;
+  font-family: 'ZCOOL QingKe HuangYou';
+}
+
+.mask > h4{
+  font-size: 40px;
+  font-family: 'Courgette';
+  color: rgb(255,215,0)
+}*/
+
+
+.moods {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+
+/*
+.mask > h1
+.disable-responsive-font-size .mask > h1,
+.mask > h1.disable-responsive-font-size  {
+  font-size: 4rem;
+}
+ 
+@media (max-width: 1200px) {
+  .mask > h1 {
+    font-size: calc(1.6rem + 3.2vw);
+  }
+}*/
