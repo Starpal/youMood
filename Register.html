@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="/HowsGoing.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./Registration.css">
     <!-- para agregar el favicon -->
     <link rel="shortcut icon" type="image/png" href="images/title-img.png">
 
@@ -35,58 +36,30 @@
     </nav>
 <!--end of navbar-->
 
-<!--section Moods-->
-<section class="bg-dark mt-5" id="moods">
- <!--<img src="./img/audio_levels_ancient.jpeg" class="img-fluid w-100" alt="moon">-->
-    <div class="container-fluid p-5">
-        <div class="row" id="text">
-            <div class="col text-center mb-3">
-              <!--  <h1 class="text-light font-weight-bold my-5">How do you feel today?</h1>
-                <img class="w-50" src="./img/arrow.png" alt="arrow">-->
-            </div>
-        </div>
-        <p class="lead text-warning font-weight-bold text-center mt-3">...choose your mood</p><br>
-        <div class="row py-0">
-            
-            <div class="col-lg-3 col-sm-6">
-                <button id="button-image1"><img src="./img/pioggia.jpeg" alt="rainy" class="img-thumbnail w-100">
-                </button>
-                <h2 class="my-3 text-warning text-center">Rainy</h2>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <button><img src="./img/sole.jpg" alt="sunny" class="img-thumbnail w-100">
-                </button>
 
-                <h2 class="my-3 text-warning text-center">Sunshine</h2>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <button><img src="./img/meditative.png" alt="meditative" class="img-thumbnail w-100">
-                </button>
-                <h2 class="my-3 text-warning text-center">Meditative</h2>
-            </div>
-            <div class="col-lg-3 col-sm-6 justify-content-center">
-                <button><img src="img/on-fire.jpg" alt="on-fire" class="img-thumbnail w-100">
-                </button>
-                <h2 class="my-3 text-warning text-center">On fire</h2>
-            </div>
-        </div>
-    </div>
-</section>
-<!--end of section Moods-->
+<!-- Text input-->
+<main class="main-forms">
+    <section>
 
-<!--section results-->
-<section class="p-5 bg-info">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col text-center mb-3">
-                <h1 class="text-warning display-3">Results</h1>
-                <p class="lead text-secondary">Here you can find your suggestions:</p>
-            </div>
-        </div>
-        <ul id="list-group">
-          </ul>
-    </div>
-</section>
+      <h2 class="text-dark">Registration Form</h2><br>
+
+      <div class="form-wrapper">
+
+        <form class="signup-form" id="signup-form" action="">
+
+          <input type="text" id="name" placeholder="Nombre" autocomplete="off" required /><br>
+          <input type="email" id="email" placeholder="Email" autocomplete="off" required /><br>
+          <input type="text" id="phone" placeholder="Teléfono" autocomplete="off" required /><br>
+          <input type="password" id="password" placeholder="Password" autocomplete="off" required /><br>
+          <input type="password" id="repeat-password" placeholder="Repeat Password" autocomplete="off" required /><br><br>
+          <button type="submit" class="button" id="signup-button" >Register!</button>
+        </form>
+
+        <div class="errors-container"></div>
+      </div>
+
+    </section>
+  </main>
 
 <!-- jQuery first, then Popper.js, then Bootstrap.js -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -95,7 +68,9 @@
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-<script src="./fetch.js"></script>
+<script src="./User.js"></script>
+<script src="./Validation.js"></script>
+<script src="./Register.js"></script>
 
 </body>
 </html>
