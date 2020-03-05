@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./Registration.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/Registration.css">
     <!-- para agregar el favicon -->
     <link rel="shortcut icon" type="image/png" href="images/title-img.png">
 
@@ -20,7 +20,7 @@
 <body>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light btn-outline-light fixed-top mb-5" id="nav">
-
+        <div class="container">
         <a href="./index.html" class="navbar-brand py-0"><img src="./img/logoSimple.jpeg" width="40px"></a>
     
         <button type="button" class="navbar-toggler btn-outline-dark text-dark" data-toggle="collapse" data-target="#nav" aria-expanded="false"><span class="navbar-toggler-icon"></span></button>
@@ -33,6 +33,7 @@
                 <li class="nav-item"><a class="nav-link text-light px-5" href="./Log-In.html">Log in</a></li>
             </ul>
         </div>
+        </div>
     </nav>
 <!--end of navbar-->
 
@@ -41,15 +42,14 @@
 <main class="main-forms">
     <section>
 
-      <h2 class="text-dark">Registration Form</h2><br>
+      <h2 class="text-light py-5">Registration Form</h2><br>
 
       <div class="form-wrapper">
 
         <form class="signup-form" id="signup-form" action="">
 
-          <input type="text" id="name" placeholder="Nombre" autocomplete="off" required /><br>
+          <input type="text" id="name" placeholder="Name" autocomplete="off" required /><br>
           <input type="email" id="email" placeholder="Email" autocomplete="off" required /><br>
-          <input type="text" id="phone" placeholder="Teléfono" autocomplete="off" required /><br>
           <input type="password" id="password" placeholder="Password" autocomplete="off" required /><br>
           <input type="password" id="repeat-password" placeholder="Repeat Password" autocomplete="off" required /><br><br>
           <button type="submit" class="button" id="signup-button" >Register!</button>
@@ -68,9 +68,9 @@
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-<script src="./User.js"></script>
-<script src="./Validation.js"></script>
-<script src="./Register.js"></script>
+<script src="./scripts/User.js"></script>
+<script src="./scripts/Validation.js"></script>
+<script src="./scripts/Register.js"></script>
 
 </body>
 </html>

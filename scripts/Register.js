@@ -1,32 +1,37 @@
+
+//selection of inputs
 let userName = document.getElementById("name");
 let email = document.getElementById("email");
 let password = document.getElementById("password");
 let repeatPassword = document.getElementById("repeat-password");
-
-let logInButton = document.getElementById("log-in-button");
-let form = document.getElementsByClassName("signup-form")[0];
+//selection of other elements
+let form = document.getElementsByClassName("signup-form")[0]; /*zero para seleccionar solo primer elemento de la clase*/
 let formWrapper = document.getElementsByClassName("form-wrapper")[0];
 let signUpButton = document.getElementsByClassName("button")[0];
 
 let usersDB = JSON.parse(localStorage.getItem('users'))
 
 signUpButton.addEventListener("click", function(event){
-    event.preventDefault();
+    event.preventDefault(); // evita que al presionar el boton se me recargue la pagina.SEMPRE PRIMA COSA DA FARE CON EVENTI IN BOTTONI
     deleteErrors();
+    
+    // si inputs son validos o no lo guarda en base de  dato o  muestra un error
 
-    if (checkValidUser()){
+    if (checkValidUser()){//comprueva que inputs sean validos
         console.log("user registered")
         createUser(name.value, email.value, password.value)
     };
 })
 
 function checkValidUser() {
+    //CREA UNA INSTANCIA DE SignupVALIDATOR
     let signUpValidator = new SignUpValidator (userName.value, email.value, password.value, repeatPassword.value);
 
     let usersDB = JSON.parse(localStorage.getItem("users"));
     let validUser = true;
 
-    if(!signUpValidator.checkUserName()){
+    //VALIDACIONES
+    if(!signUpValidator.checkUserName()){//si pasa validation DI CHECKUSERNAME(che sta in validation.js) devuelve validUser=true sennò validUser=false
         signUpValidator.errorCreator("Please type a valid username", userName)
         validUser=false
     }
@@ -35,7 +40,7 @@ function checkValidUser() {
         validUser=false
     }
     if(!signUpValidator.checkPassword()){
-        signUpValidator.errorCreator("Please type a valid password", password)
+        signUpValidator.errorCreator("Please insert a valid password. Must be of minimum 6 characters length", password)
         validUser=false
     }
     if(!signUpValidator.checkRepeatPassword()){

@@ -19,10 +19,10 @@ body{
   transform: translate(-50%, -50%); 
 }
 .view {
-  background-image: url(./img/moonColorednew.png);
-    height: 100%;
-    background-size: cover;
-    background-position: center;
+  background-image: url("./img/moonColorednew.png");
+  height: 100%;
+  background-size: cover;
+  background-position: center;
   position: relative;
   text-align: center;
   color: white;
@@ -34,14 +34,14 @@ body{
 
 
 .mask > h1{
- /* font-size: 100px;*/
   font-family: 'ZCOOL QingKe HuangYou';
+  text-shadow: 3px 3px 3px rgb(133, 38, 177);
 }
 
 .mask > h4{
- /* font-size: 40px;*/
   font-family: 'Courgette';
-  color: rgb(255,215,0)
+  color: rgb(96, 209, 147);
+  text-shadow: 3px 3px 3px rgb(133, 38, 177);
 }
 
 
@@ -57,18 +57,11 @@ body{
   transform: translate(-50%, -50%); 
 }
 
-/*
-.mask > h1
-.disable-responsive-font-size .mask > h1,
-.mask > h1.disable-responsive-font-size  {
-  font-size: 4rem;
+a{
+text-shadow: 3px 3px 3px rgb(133, 38, 177);
+background-color:  rgba(149, 216, 179, 0.8);
 }
- 
-@media (max-width: 1200px) {
-  .mask > h1 {
-    font-size: calc(1.6rem + 3.2vw);
-  }
-}*/
+
 
 
 

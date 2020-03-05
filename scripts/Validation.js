@@ -74,20 +74,22 @@ class SignUpValidator extends Validator {
 
 
 class LogInValidator extends Validator {
-    constructor (){
-        super();
+    constructor (email, password){
+        super(email, password);
     }
 
-    checkEmailInDB (string){
+    checkEmailAndPasswordInDB (usersDB){
+        let answer = false;
+        //si no esta en la base de datos
         if (!userDB){
             return false
         }
-        else{
             userDB.forEach(user => {
-                if (user.email === string){return true}
+                if (this.email === user.email && this.password === user.password){
+                    answer = true
+                }
             })
-        }
-        return false
+        return answer
     }
 
-} 
+}

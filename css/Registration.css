@@ -1,3 +1,8 @@
+body{
+    height: 100vh;
+    background-image: url("./img/Audio-Waveforms-Featued-Image.jpg");
+}
+
 
 .main-forms {
     margin-top: 75px;
@@ -6,7 +11,8 @@
   
   .main-forms, h2{
     text-align: center;
-    text-shadow: rgba(133, 38, 177, 0.3);
+    color: white;
+    text-shadow: 3px 3px 3px rgb(133, 38, 177);
   }
   
   .form-wrapper {
@@ -44,7 +50,7 @@
     height: 40px;
     width: 180px;
     margin-top: 30px;
-    background-color: rgba(149, 216, 179, 0.8);
+    background-color: rgb(149, 216, 179);
     color: white;
     border: none;
     box-shadow: 3px 3px 3px rgb(133, 38, 177);

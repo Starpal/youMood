@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Condiment|Courgette|ZCOOL+QingKe+HuangYou&display=swap');
+html {
+    scroll-behavior: smooth;
+  }
+
+
+#nav{
+  background-color: rgba(149, 216, 179, 0.8)
+}
+
+ul {
+list-style-type: none;
+}
+
+#nav a{
+    text-shadow: 3px 3px 3px rgb(133, 38, 177);
+    background-color:  rgba(149, 216, 179, 0.8);
+    }
+
+#h1{
+font-family: 'ZCOOL QingKe HuangYou';
+text-shadow: 3px 3px 3px rgb(133, 38, 177);
+
+}
+
+#h2{
+font-family: 'Courgette';
+color: rgb(96, 209, 147);
+text-shadow: 3px 3px 3px rgb(133, 38, 177);
+}
+
+p{
+font-family: 'Courgette';
+color:white;
+}
+
+#list-group{
+background:
+        linear-gradient(217deg, rgba(225, 0, 255, 0.575), rgba(255, 0, 212, 0) 70.71%),
+        linear-gradient(127deg, rgba(0, 255, 0, 0.425), rgba(0,255,0,0) 70.71%),
+        linear-gradient(336deg, rgba(0, 0, 255, 0.486), rgba(0,0,255,0) 70.71%);
+border-radius: 30%;
+  }
+
+
+
+
+main{
+    background-image: url("./img/Audio-Waveforms-Featued-Image.jpg");
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+button{
+    border-style: none;
+    background-color: transparent;
+   
+}
+
+.button-image {
+    border-radius: 50%;
+    border:4px solid rgba(164, 199, 109, 0.8);
+}
+ 
