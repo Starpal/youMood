@@ -46,7 +46,7 @@ border-radius: 30%;
 
 
 main{
-    background-image: url("./img/Audio-Waveforms-Featued-Image.jpg");
+    background-image: url("../img/Audio-Waveforms-Featued-Image.jpg");
     height: 100%;
     background-size: cover;
     background-position: center;
