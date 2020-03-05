@@ -1,4 +1,4 @@
-# YOurMOOD
+# youMOOD
 
 ## Description
 YouMood is a static responsive web page were you can shuffle videos from youTube API based on you current emotional mood.
@@ -30,14 +30,11 @@ Task definition in order of priority
 
 
 ### Git
-URls for the project repo and deploy
-[Link Repo](http://github.com)
-[Link Deploy](http://github.com)
+https://github.com/Starpal/youMood
 
 
 ### Slides
-URls for the project presentation (slides)
-[Link Slides.com](http://slides.com)
+https://docs.google.com/presentation/d/1_NhxNDJfhqUh_nRY6_YCM9s9tvLhU0RBHiWoxrUeikg/edit#slide=id.g70d4ccab49_1_11
 
 
 ### Trello
