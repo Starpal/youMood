@@ -1,6 +1,8 @@
 body{
-    height: 100vh;
-    background-image: url("../img/Audio-Waveforms-Featued-Image.jpg");
+  height: 100vh;
+  background-image: url("../img/Audio-Waveforms-Featued-Image.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 
@@ -13,6 +15,8 @@ body{
     text-align: center;
     color: white;
     text-shadow: 3px 3px 3px rgb(133, 38, 177);
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+
   }
   
   .form-wrapper {
@@ -40,12 +44,6 @@ body{
   }
   
   
-
-  input[type="text"]:disabled {
-    background: var(--white-color);
-    border-color: black;
-  }
-  
   button, .button {
     height: 40px;
     width: 180px;
@@ -68,4 +66,8 @@ body{
     color: var(--blue-color);
     margin-top: 30px;
     text-align: center;
+  }
+
+  .login{
+    color: white;
   }

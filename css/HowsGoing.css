@@ -1,68 +1,133 @@
-@import url('https://fonts.googleapis.com/css?family=Condiment|Courgette|ZCOOL+QingKe+HuangYou&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Condiment|Courgette|ZCOOL+QingKe+HuangYou&display=swap");
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
 
-
-#nav{
-  background-color: rgba(149, 216, 179, 0.8)
+#nav {
+  background-color: rgba(149, 216, 179, 0.8);
 }
 
 ul {
-list-style-type: none;
+  list-style-type: none;
 }
 
-#nav a{
-    text-shadow: 3px 3px 3px rgb(133, 38, 177);
-    background-color:  rgba(149, 216, 179, 0.8);
-    }
+#nav a {
+  text-shadow: 3px 3px 3px rgb(133, 38, 177);
+  background-color: rgba(149, 216, 179, 0.8);
+}
 
-#h1{
-font-family: 'ZCOOL QingKe HuangYou';
-text-shadow: 3px 3px 3px rgb(133, 38, 177);
+#h1 {
+  font-family: "ZCOOL QingKe HuangYou";
+  text-shadow: 3px 3px 3px rgb(133, 38, 177);
 
 }
 
-#h2{
-font-family: 'Courgette';
-color: rgb(96, 209, 147);
-text-shadow: 3px 3px 3px rgb(133, 38, 177);
+.results{
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
 }
 
-p{
-font-family: 'Courgette';
-color:white;
+
+#h2 {
+  font-family: "Courgette";
+  font-size: 50px;
+  color: rgb(197, 236, 215);
+  text-shadow: 3px 3px 3px rgb(150, 12, 214);
 }
 
-#list-group{
-background:
-        linear-gradient(217deg, rgba(225, 0, 255, 0.575), rgba(255, 0, 212, 0) 70.71%),
-        linear-gradient(127deg, rgba(0, 255, 0, 0.425), rgba(0,255,0,0) 70.71%),
-        linear-gradient(336deg, rgba(0, 0, 255, 0.486), rgba(0,0,255,0) 70.71%);
-border-radius: 30%;
-  }
-
-
-
-main{
-    background-image: url("../img/Audio-Waveforms-Featued-Image.jpg");
-    height: 100%;
-    background-size: cover;
-    background-position: center;
+p {
+  font-family: "Courgette";
+  color: white;
+  font-size: 60px;
 }
 
-button{
-    border-style: none;
-    background-color: transparent;
-   
+#list-group {
+  background: linear-gradient(
+      217deg,
+      rgba(225, 0, 255, 0.575),
+      rgba(255, 0, 212, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(0, 255, 0, 0.425), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.486), rgba(0, 0, 255, 0) 70.71%);
+  border-radius: 30%;
+}
+
+main {
+  background-image: url("../img/Audio-Waveforms-Featued-Image.jpg");
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+button {
+  border-style: none;
+  background-color: transparent;
 }
 
 .button-image {
-    border-radius: 50%;
-    border:4px solid rgba(164, 199, 109, 0.8);
+  border-radius: 50%;
+  border: 4px solid rgba(164, 199, 109, 0.8);
 }
 
-#animation{
-  animation:bounce-in-bottom 1.1s 1 both;
+
+
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #4cd6ad, 0 0 70px #4cd6ad;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #66e6bf, 0 0 80px #66e6bf;
+  }
 }
-@keyframes bounce-in-bottom{0%{transform:translateY(500px);animation-timing-function:ease-in;opacity:0}38%{transform:translateY(0);animation-timing-function:ease-out;opacity:1}55%{transform:translateY(65px);animation-timing-function:ease-in}72%{transform:translateY(0);animation-timing-function:ease-out}81%{transform:translateY(28px);animation-timing-function:ease-in}90%{transform:translateY(0);animation-timing-function:ease-out}95%{transform:translateY(8px);animation-timing-function:ease-in}100%{transform:translateY(0);animation-timing-function:ease-out}}
+
+#animation {
+  animation: bounce-in-bottom 1.1s 1 both;
+}
+
+@keyframes bounce-in-bottom {
+  0% {
+    transform: translateY(500px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateY(65px);
+    animation-timing-function: ease-in;
+  }
+  72% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateY(28px);
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateY(8px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+}
+
+#list-group li{
+  text-decoration-color: none;
+  color: rgb(96, 209, 147);
+  text-shadow: 3px 3px 3px rgb(133, 38, 177);
+}

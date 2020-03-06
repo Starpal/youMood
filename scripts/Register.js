@@ -60,6 +60,7 @@ function deleteErrors (){
     errors ? errors.forEach(error => error.remove()) : null;
 }
 
+
 function createUser (name, email, password) {
     const newUser = new User (name, email, password)
 
@@ -69,4 +70,12 @@ function createUser (name, email, password) {
         usersDB = [newUser]
     }
     localStorage.setItem('users', JSON.stringify(usersDB));
+}
+
+let validationMessage = () => {
+    let div = document.createElement("div")
+    let currentUser = JSON.parse(localStorage.getItem('users'));
+    div.innerHTML = `<h1 class="login"> Hello, welcome to youMood!</h1>`;
+    form.insertBefore(div, logInButton);
+    signUpButton.remove()
 }

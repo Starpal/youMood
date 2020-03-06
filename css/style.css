@@ -61,12 +61,3 @@ a{
 text-shadow: 3px 3px 3px rgb(133, 38, 177);
 background-color:  rgba(149, 216, 179, 0.8);
 }
-
-
-
-
-@media screen {
-  * {
-      background-size: 100%
-  }
-}
