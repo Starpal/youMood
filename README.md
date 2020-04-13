@@ -1,8 +1,7 @@
 # youMOOD
 
 ## Description
-YouMood is a static responsive web page were you can shuffle videos from youTube API based on you current emotional mood.
-
+YouMood is a static responsive web page where the user upon the selection of an emotional state, gets music suggestions classified by genre in the form of random songs.
 
 ## MVP
 - Responsive webpage
