@@ -16,7 +16,6 @@ body{
     color: white;
     text-shadow: 3px 3px 3px rgb(133, 38, 177);
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-
   }
   
   .form-wrapper {
@@ -43,7 +42,6 @@ body{
     font: inherit;
   }
   
-  
   button, .button {
     height: 40px;
     width: 180px;
@@ -57,13 +55,9 @@ body{
     align-self: center;
   }
   
-  button:disabled, .button:disabled {
-    background-color: grey;
-  }
-  
   .welcome-message {
     font-size: 1.5em;
-    color: var(--blue-color);
+    color: var(--red-color);
     margin-top: 30px;
     text-align: center;
   }

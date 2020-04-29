@@ -1,22 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Condiment|Courgette|ZCOOL+QingKe+HuangYou&display=swap');
-#nav{
-  background-color: rgba(149, 216, 179, 0.8)
+@import url("https://fonts.googleapis.com/css?family=Condiment|Courgette|ZCOOL+QingKe+HuangYou&display=swap");
+#nav {
+  background-color: rgba(149, 216, 179, 0.8);
 }
 
-html{
+html {
   height: 100vh;
 }
 
-body{
+body {
   height: 100vh;
 }
 
-
-.mask{
+.mask {
   position: absolute;
   top: 30%;
   left: 50%;
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
 }
 .view {
   background-image: url("../img/moonColorednew.png");
@@ -28,36 +27,36 @@ body{
   color: white;
 }
 
-#main-image{
+#main-image {
   background-size: 100%;
 }
 
-
-.mask > h1{
-  font-family: 'ZCOOL QingKe HuangYou';
+.mask > h1 {
+  font-family: "ZCOOL QingKe HuangYou";
   text-shadow: 3px 3px 3px rgb(133, 38, 177);
 }
 
-.mask > h4{
-  font-family: 'Courgette';
+.mask > h4 {
+  font-family: "Courgette";
   color: rgb(96, 209, 147);
   text-shadow: 3px 3px 3px rgb(133, 38, 177);
 }
-
 
 .moods {
   position: relative;
   text-align: center;
   color: white;
 }
-#text{
+
+#text {
   position: absolute;
   top: 20%;
   left: 50%;
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
 }
 
-a{
-text-shadow: 3px 3px 3px rgb(133, 38, 177);
-background-color:  rgba(149, 216, 179, 0.8);
+a {
+  text-shadow: 3px 3px 3px rgb(133, 38, 177);
+  background-color: rgba(149, 216, 179, 0.8);
+  font-weight: bold;
 }

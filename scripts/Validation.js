@@ -24,7 +24,7 @@ class Validator {
             return true
         }
     }
-
+    
     errorCreator (message, location) {
         let div = document.createElement("div")
         div.setAttribute("class", "error")
@@ -37,8 +37,6 @@ class Validator {
         errors ? errors.forEach(error => error.remove()) : null;
     }
 }
-
-
 
 class SignUpValidator extends Validator {
     constructor (userName, email, password, repeatPassword){
@@ -56,6 +54,8 @@ class SignUpValidator extends Validator {
             usersDB.forEach(user => {
                 if (user.email === this.email){
                     userExists=false
+                } else{
+                    userExists=true
                 }
             })
         }
@@ -71,25 +71,21 @@ class SignUpValidator extends Validator {
     }
 }
 
-
-
 class LogInValidator extends Validator {
-    constructor (email, password){
-        super(email, password);
+    constructor (){
+        super();
     }
 
-    checkEmailAndPasswordInDB (usersDB){
-        let answer = false;
-        //si no esta en la base de datos
+    checkEmailInDB (string){
         if (!userDB){
             return false
         }
+        else{
             userDB.forEach(user => {
-                if (this.email === user.email && this.password === user.password){
-                    answer = true
-                }
+                if (user.email === string){return true}
             })
-        return answer
+        }
+        return false
     }
 
 }

@@ -4,7 +4,6 @@ let userName = document.getElementById("name");
 let email = document.getElementById("email");
 let password = document.getElementById("password");
 let repeatPassword = document.getElementById("repeat-password");
-//selection of other elements
 let form = document.getElementsByClassName("signup-form")[0]; /*zero para seleccionar solo primer elemento de la clase*/
 let formWrapper = document.getElementsByClassName("form-wrapper")[0];
 let signUpButton = document.getElementsByClassName("button")[0];
@@ -12,14 +11,17 @@ let signUpButton = document.getElementsByClassName("button")[0];
 let usersDB = JSON.parse(localStorage.getItem('users'))
 
 signUpButton.addEventListener("click", function(event){
-    event.preventDefault(); // evita que al presionar el boton se me recargue la pagina.SEMPRE PRIMA COSA DA FARE CON EVENTI IN BOTTONI
+    event.preventDefault(); //evita que al presionar el boton se me recargue la pagina.SEMPRE PRIMA COSA DA FARE CON EVENTI IN BOTTONI
     deleteErrors();
     
-    // si inputs son validos o no lo guarda en base de  dato o  muestra un error
+    // si inputs son validos lo guarda en base de datos o muestra un error
 
-    if (checkValidUser()){//comprueva que inputs sean validos
+    if (checkValidUser()){
         console.log("user registered")
-        createUser(name.value, email.value, password.value)
+        createUser(userName.value, email.value, password.value, currentUser = true)
+        let div = document.createElement("div")
+        div.innerHTML = `<p class="info-text"> Welcome ${userName.value}!<br> <a class="info-text" href="HowsGoing.html"> Let's listen to some good Music!</a></p>`
+        form.insertBefore(div, signUpButton)
     };
 })
 
