@@ -55,12 +55,12 @@ body{
     align-self: center;
   }
   
-  .welcome-message {
+  /* .welcome-message {
     font-size: 1.5em;
     color: var(--red-color);
     margin-top: 30px;
     text-align: center;
-  }
+  } */
 
   .login{
     color: white;
