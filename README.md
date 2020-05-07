@@ -29,5 +29,4 @@ https://docs.google.com/presentation/d/1_NhxNDJfhqUh_nRY6_YCM9s9tvLhU0RBHiWoxrUe
 
 
 ### Trello
-URls for the project planning
 https://trello.com/b/n5N2CiPv/yourmood
