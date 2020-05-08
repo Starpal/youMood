@@ -1,4 +1,3 @@
-
 let showLinksButton = document.getElementById("button-image1");
 let showLinksButton2 = document.getElementById("button-image2");
 let showLinksButton3 = document.getElementById("button-image3");
