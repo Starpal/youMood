@@ -10,7 +10,7 @@ const tracklistLinks = [];
 
 let rainArray = ['https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/153/artists','https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/129/artists', 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/466/artists', 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/98/artists'];
 let sunnyArray = ["https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/132/artists", "https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/197/artists", "https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/113/artists", "https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/75/artists", "https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/71/artists", "https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/169/artists"];
-let meditationArray = ["https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/16/artists", "https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/81/artists", "https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/98/artists"];
+let meditationArray = ["https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/81/artists", "https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/98/artists"];
 let onFireArray =["https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/152/artists", "https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/464/artists"];
 
 function getData(arr) {
@@ -24,7 +24,7 @@ function getData(arr) {
     })
     .then(response => response.json())
     .then(data => {
-       console.log("randomURL",arr )
+      // console.log("randomURL",arr )
       artistsArray = []
       let fullArstistsData = data.data[Math.floor(Math.random() * data.data.length)];
       artistsArray.push(fullArstistsData)

@@ -1,8 +1,15 @@
+html{
+  margin:0;
+  padding:0;
+}
+
 body{
   height: 100vh;
   background-image: url("../img/Audio-Waveforms-Featued-Image.jpg");
   background-size: cover;
   background-position: center;
+  margin:0;
+  padding:0;
 }
 
 
@@ -59,4 +66,9 @@ body{
     color: white;
   }
 
-
+  video{
+    margin:0;
+    padding:0;
+    position: absolute;
+    transform: translate(4.5em, -6em);
+  }
