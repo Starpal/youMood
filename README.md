@@ -1,7 +1,7 @@
 # youMOOD
 
 ## Description
-YouMood is a static responsive web page where the user can select his actual emotional state (e.g. rainy, on-fire, meditative) by clicking on the correspondent button, and gets music suggestions classified by genre in the form of random songs.
+YouMood is a static responsive web page where the user can select an emotional state (e.g. rainy, on-fire, meditative) by clicking on the correspondent button, and get music suggestions in the form of random songs.
 
 ## MVP
 - Responsive webpage
