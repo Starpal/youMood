@@ -34,7 +34,8 @@ ul {
 
 #h2 {
   font-family: "Courgette";
-  font-size: 50px;
+  text-align: center;
+  font-size: 45px;
   color: rgb(229, 253, 240);
   text-shadow: 3px 3px 3px rgb(150, 12, 214);
   text-shadow: -2px 0 rgb(150, 12, 214), 0 2px rgb(150, 12, 214), 20px rgb(76, 6, 109);
@@ -67,12 +68,14 @@ p {
     linear-gradient(127deg, rgba(0, 255, 0, 0.425), rgba(0, 255, 0, 0) 70.71%),
     linear-gradient(336deg, rgba(0, 0, 255, 0.486), rgba(0, 0, 255, 0) 70.71%);
   border-radius: 30%;
+  width: auto;
 }
 
 #list-group li{
   text-decoration-color: none;
   color: rgb(96, 209, 147);
   text-shadow: 3px 3px 3px rgb(133, 38, 177);
+
 }
 
 main {
@@ -86,28 +89,30 @@ main {
 button {
   border-style: none;
   background-color: transparent;
+  width: 15rem;
 }
 
 .button-image {
   border-radius: 50%;
   border: 4px solid rgba(164, 199, 109, 0.8);
-  max-width: 70%;
+  max-width: 85%;
 }
 
 #animation {
   animation: bounce-in-bottom 1.1s 1 both;
-  /* margin-left: 4.2em; */
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 20px 100px 0 100px; 
 }
 
 @media screen and (max-width: 600px) {
 #animation{
   display:flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
-main{
-  
-}
+
   #h1 { 
     font-size: 3.5rem;
     text-align: center;
@@ -142,8 +147,12 @@ button {
   border-bottom: solid 1px rgb(102, 98, 92);
 }
 
+
 iframe{
-  max-width: 91px;
+  max-width: 13em;
+}
+
+#list-group li{
   transform: translateX(-18px);
 }
 }

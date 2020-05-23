@@ -24,7 +24,7 @@ function getData(arr) {
     })
     .then(response => response.json())
     .then(data => {
-      //console.log("randomURL",arr )
+      console.log("randomURL",arr )
       artistsArray = []
       let fullArstistsData = data.data[Math.floor(Math.random() * data.data.length)];
       artistsArray.push(fullArstistsData)
@@ -57,7 +57,7 @@ function getTracklistLink(item) {
       let ul = document.getElementById("list-group");
       
       tracklistLinks.forEach(link => {
-        list.innerHTML =`<iframe scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=ff0000&layout=light&size=medium&type=tracks&id=${link}&app_id=1" width="700" height="87"></iframe>`
+        list.innerHTML =`<iframe scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&size=small&autoplay=false&playlist=true&color=ff0000&layout=light&size=medium&type=tracks&id=${link}&app_id=1" width="400" height="92"></iframe>`
         tracklistLinks.pop()
         ul.appendChild(list)
       })
