@@ -55,14 +55,13 @@ let validationMessage = () => {
   setTimeout(function () {
     section.innerHTML="";
     section.innerHTML =  `<video width="1280" height="1000" autoplay>
-    <source src="./img/northern-lights-night.mp4" type="video/mp4">
+    <source src="./img/northern-lights-night.mp4#t=2" type="video/mp4">
     </video>`
   }, 1000); 
   
-
   setTimeout(function () {
     window.location.href = "HowsGoing.html"; //redirect to main page 'HowsGoing'
- }, 4400); 
+ }, 2600); 
   }
 
 let mainLogIn = () => {
