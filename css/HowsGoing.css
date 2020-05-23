@@ -105,7 +105,9 @@ button {
   display:flex;
   flex-wrap: wrap;
 }
-
+main{
+  
+}
   #h1 { 
     font-size: 3.5rem;
     text-align: center;
@@ -113,8 +115,7 @@ button {
 
   #h2 { 
     font-size: 1.5rem;
-    height: 13px;
-    transform: translateY(20px);
+    transform: translateY(13px);
   }
 
 .btnDiv{
@@ -126,7 +127,7 @@ button {
     border: 2px solid rgba(164, 199, 109, 0.8);
     max-width: 60%;
     float: left;
-    transform: translateY(2.2px);
+    transform: translateY(1px);
 }
 
 button {
@@ -135,7 +136,7 @@ button {
 }
 
 .btn-container{
-  width: 100vh;
+  width: 17em;
   display: flex;
   background-color: rgba(30, 71, 71, 0.301);
   border-bottom: solid 1px rgb(102, 98, 92);
