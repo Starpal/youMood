@@ -40,6 +40,18 @@ ul {
   text-shadow: -2px 0 rgb(150, 12, 214), 0 2px rgb(150, 12, 214), 20px rgb(76, 6, 109);
 }
 
+.btnContainer{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  min-width: 20rem;
+}
+
+.btnDiv{
+  max-width: 17em;
+  padding-left: 2rem;
+}
+
 p {
   font-family: "Courgette";
   color: white;
@@ -79,13 +91,62 @@ button {
 .button-image {
   border-radius: 50%;
   border: 4px solid rgba(164, 199, 109, 0.8);
+  max-width: 70%;
 }
 
 #animation {
   animation: bounce-in-bottom 1.1s 1 both;
-  width: 90%;
-  margin-left: 4.2em;
+  /* margin-left: 4.2em; */
+  display: flex;
 }
+
+@media screen and (max-width: 600px) {
+#animation{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+  #h1 { 
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  #h2 { 
+    font-size: 1.5rem;
+    height: 13px;
+    transform: translateY(20px);
+  }
+
+.btnDiv{
+  max-width: 10rem;
+}
+
+.button-image {
+  border-radius: 50%;
+    border: 2px solid rgba(164, 199, 109, 0.8);
+    max-width: 60%;
+    float: left;
+    transform: translateY(2.2px);
+}
+
+button {
+  max-width: 135px;
+  padding-left: 20px;
+}
+
+.btn-container{
+  width: 100vh;
+  display: flex;
+  background-color: rgba(30, 71, 71, 0.301);
+  border-bottom: solid 1px rgb(102, 98, 92);
+}
+
+iframe{
+  max-width: 91px;
+  transform: translateX(-18px);
+}
+}
+
 
 
 @-webkit-keyframes glow {

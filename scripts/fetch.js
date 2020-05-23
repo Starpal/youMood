@@ -18,12 +18,13 @@ function getData(arr) {
         'Content-Type': 'application/json',
         'Content-Type': 'application/x-www-form-urlencoded',
         'Accept': 'application/json',
+        'Content-Security-Policy': 'report-only',
         'Access-Control-Allow-Origin': 'https://youmood.com'
       },
     })
     .then(response => response.json())
     .then(data => {
-      console.log("randomURL",arr )
+      //console.log("randomURL",arr )
       artistsArray = []
       let fullArstistsData = data.data[Math.floor(Math.random() * data.data.length)];
       artistsArray.push(fullArstistsData)
@@ -39,7 +40,7 @@ function getTracklistLink(item) {
       'Content-Type': 'application/x-www-form-urlencoded',
       'Accept': 'application/json',
       'Content-Security-Policy': 'report-only',
-      'Access-Control-Allow-Origin': 'http://youmood.com'
+      'Access-Control-Allow-Origin': 'https://youmood.com'
     }
   })
   .then(response => response.json())
@@ -48,7 +49,7 @@ function getTracklistLink(item) {
     trackLists.length = 1;
     trackLists.forEach(track => {
       tracklistLinks.push(track.link.slice(29));
-     // list.innerHTML=""
+      list.innerHTML=""
       //console.log("tracklistLinks",tracklistLinks)
       })
     })
@@ -56,7 +57,7 @@ function getTracklistLink(item) {
       let ul = document.getElementById("list-group");
       
       tracklistLinks.forEach(link => {
-        list.innerHTML =`<iframe scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=true&playlist=true&width=700&height=350&color=ff0000&layout=light&size=medium&type=tracks&id=${link}&app_id=1" width="700" height="87"></iframe>`
+        list.innerHTML =`<iframe scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=ff0000&layout=light&size=medium&type=tracks&id=${link}&app_id=1" width="700" height="87"></iframe>`
         tracklistLinks.pop()
         ul.appendChild(list)
       })

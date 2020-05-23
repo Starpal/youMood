@@ -57,12 +57,12 @@ let validationMessage = () => {
     section.innerHTML =  `<video width="1280" height="1000" autoplay>
     <source src="./img/northern-lights-night.mp4" type="video/mp4">
     </video>`
-  }, 1300); 
+  }, 1000); 
   
 
   setTimeout(function () {
     window.location.href = "HowsGoing.html"; //redirect to main page 'HowsGoing'
- }, 4000); 
+ }, 4400); 
   }
 
 let mainLogIn = () => {

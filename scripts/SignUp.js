@@ -1,4 +1,3 @@
-
 //selection of inputs
 let userName = document.getElementById("name");
 let email = document.getElementById("email");
@@ -13,9 +12,6 @@ let usersDB = JSON.parse(localStorage.getItem('users'))
 signUpButton.addEventListener("click", function(event){
     event.preventDefault(); //evita que al presionar el boton se me recargue la pagina.SEMPRE PRIMA COSA DA FARE CON EVENTI IN BOTTONI
     deleteErrors();
-    
-    // si inputs son validos lo guarda en base de datos o muestra un error
-
     if (checkValidUser()){
         console.log("user registered")
         createUser(userName.value, email.value, password.value, currentUser = true)
