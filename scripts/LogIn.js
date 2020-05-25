@@ -51,7 +51,7 @@ let validationMessage = () => {
   
   setTimeout(function () {
     window.location.href = "HowsGoing.html"; //redirect to main page 'HowsGoing'
- }, 3600); 
+ }, 3500); 
   }
 
 let mainLogIn = () => {

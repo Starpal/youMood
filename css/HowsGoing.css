@@ -186,7 +186,7 @@ iframe {
 }
 
 #list-group li{
-  transform: translateX(-0.5em);
+  transform: translateX(-0.3em);
 }
 .top{
   transform: translate(2em,4.5em);

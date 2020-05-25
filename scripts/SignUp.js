@@ -6,7 +6,7 @@ let repeatPassword = document.getElementById("repeat-password");
 let form = document.getElementsByClassName("signup-form")[0]; /*zero para seleccionar solo primer elemento de la clase*/
 let formWrapper = document.getElementsByClassName("form-wrapper")[0];
 let signUpButton = document.getElementsByClassName("button")[0];
-
+let sectionSignUp = document.getElementById("signUp")
 let usersDB = JSON.parse(localStorage.getItem('users'))
 
 signUpButton.addEventListener("click", function(event){
@@ -16,8 +16,19 @@ signUpButton.addEventListener("click", function(event){
         console.log("user registered")
         createUser(userName.value, email.value, password.value, currentUser = true)
         let div = document.createElement("div")
-        div.innerHTML = `<p class="info-text"> Welcome ${userName.value}!<br> <a class="info-text" href="HowsGoing.html"> Let's listen to some good Music!</a></p>`
+        div.innerHTML = `<h2 class="info-text"> Welcome to <em>youMood<em>, ${userName.value.toUpperCase()}!<h2>`
         form.insertBefore(div, signUpButton)
+        form.removeChild(signUpButton)
+
+        setTimeout(function () {
+            sectionSignUp.innerHTML="";
+            sectionSignUp.innerHTML = 
+            `<video id="signUp-video" autoplay>
+    <source src="./img/Sun_moon.mp4#t=2,8" type="video/mp4">
+    </video>` }, 1000); 
+  setTimeout(function () {
+    window.location.href = "HowsGoing.html"; //redirect to main page 'HowsGoing'
+ }, 5000); 
     };
 })
 

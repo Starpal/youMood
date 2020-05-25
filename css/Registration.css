@@ -75,6 +75,10 @@ body{
     transform: translate(-50%, -50%);
   } 
 
+  #signUp-video{
+    width: 95%;
+  }
+
   @media screen and (max-width: 600px) {
     video{
       width: 100%;
