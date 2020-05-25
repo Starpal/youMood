@@ -69,9 +69,7 @@ ul {
     linear-gradient(127deg, rgba(0, 255, 0, 0.425), rgba(0, 255, 0, 0) 70.71%),
     linear-gradient(336deg, rgba(0, 0, 255, 0.486), rgba(0, 0, 255, 0) 70.71%);
   border-radius: 30%;
-  width: auto;
-  margin-right: 1em;
-  
+  width: auto; 
 }
 
 #list-group li{
@@ -188,10 +186,10 @@ iframe {
 }
 
 #list-group li{
-  transform: translateX(-1em);
+  transform: translateX(-0.5em);
 }
 .top{
-  transform: translate(1.6em,3.5em);
+  transform: translate(2em,4.5em);
   font-size: 1.5em;
   text-shadow: 0 0 12px #fff, 0 0 10px #fff, 0 0 10px #5342a0,
   0 0 18px #5342a0a2, 0 0 11px #5342a0a2, 0 0 4px #4cd6ad, 0 0 3px #4cd6ad;

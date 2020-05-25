@@ -36,16 +36,6 @@ let deleteErrors = () => {
   }
 };
 
-
-
-// let validationMessage = () => {
-//   console.log("user logged in!")
-//   let div = document.createElement("div");
-//   div.innerHTML = `<p class="info-text"> Welcome back ${userName.value}!<br> <a class="info-text" href="HowsGoing.html"> Let's find a song for your Mood-day!</a></p>`;
-//   form.appendChild(div, logInButton);
-// };
-
-
 let validationMessage = () => {
   //console.log("user logged in!")
   let div = document.createElement("div");
@@ -54,7 +44,7 @@ let validationMessage = () => {
  
   setTimeout(function () {
     section.innerHTML="";
-    section.innerHTML =  `<video width="1280" height="1000" autoplay>
+    section.innerHTML =  `<video autoplay>
     <source src="./img/northern-lights-night.mp4#t=2" type="video/mp4">
     </video>`
   }, 1000); 
