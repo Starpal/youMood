@@ -23,7 +23,7 @@ ul {
   /* font-family: "Iceland"; */
   text-shadow: 0 0 42px #fff, 0 0 40px #fff, 0 0 30px #e60073,
   0 0 28px #e60073, 0 0 21px #e60073, 0 0 14px #4cd6ad, 0 0 7px #4cd6ad;
-
+ 
 }
 
 .results{
@@ -35,7 +35,7 @@ ul {
 #h2 {
   font-family: "Courgette";
   text-align: center;
-  font-size: 45px;
+  font-size: 40px;
   color: rgb(229, 253, 240);
   text-shadow: 3px 3px 3px rgb(150, 12, 214);
   text-shadow: -2px 0 rgb(150, 12, 214), 0 2px rgb(150, 12, 214), 20px rgb(76, 6, 109);
@@ -53,10 +53,11 @@ ul {
   padding-left: 2rem;
 }
 
-p {
+.lead {
   font-family: "Courgette";
   color: white;
   font-size: 60px;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
 #list-group {
@@ -69,18 +70,20 @@ p {
     linear-gradient(336deg, rgba(0, 0, 255, 0.486), rgba(0, 0, 255, 0) 70.71%);
   border-radius: 30%;
   width: auto;
+  margin-right: 1em;
+  
 }
 
 #list-group li{
   text-decoration-color: none;
   color: rgb(96, 209, 147);
   text-shadow: 3px 3px 3px rgb(133, 38, 177);
-
+  
 }
 
 main {
   background-image: url("../img/Audio-Waveforms-Featued-Image.jpg");
-  min-height: 100vh;
+  min-height: 100%;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -103,11 +106,32 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 20px 100px 0 100px; 
+  margin: 0px 100px 0 100px; 
+}
+
+.top{
+  color:rgba(10, 10, 9, 0.596);
+  float: right;
+  font-size: 1.8em;
+  text-shadow: 0 0 12px #fff, 0 0 10px #fff, 0 0 10px #5342a0,
+  0 0 18px #5342a0a2, 0 0 11px #5342a0a2, 0 0 4px #4cd6ad, 0 0 3px #4cd6ad;
+  transform: translate(1.6em,3em);
+}
+
+.top p{
+font-size: 0.7em;
+font-weight: bold;
+font-family: 'Iceland';
+text-decoration: underline;
+transform: translateX(-0.4em)
+}
+
+.fa-angle-down{
+  font-size: 2.5em;
 }
 
 @media screen and (max-width: 600px) {
-#animation{
+  #animation {
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -115,49 +139,69 @@ button {
 
   #h1 { 
     font-size: 3.5rem;
-    text-align: center;
   }
 
   #h2 { 
     font-size: 1.5rem;
     transform: translateY(13px);
   }
-
-.btnDiv{
-  max-width: 10rem;
-}
-
-.button-image {
-  border-radius: 50%;
+  
+  .btnDiv{
+    max-width: 10rem;
+  }
+  
+  .button-image {
+    border-radius: 50%;
     border: 2px solid rgba(164, 199, 109, 0.8);
     max-width: 60%;
     float: left;
     transform: translateY(1px);
-}
+  }
+  
+  button {
+    max-width: 135px;
+    padding-left: 20px;
+  }
+  
+  .btn-container{
+    width: 17em;
+    display: flex;
+  }
+  
+  /* .lead {
+    font-family: "Courgette";
+    color: white;
+    font-size: 60px;
+    text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -2px black;
+  } */
+  
+  .results h1{
+    font-size: 3.5rem;
+  }
+  
+  .fa-angle-down{
+    font-size: 0.9em;
+  }
 
-button {
-  max-width: 135px;
-  padding-left: 20px;
-}
-
-.btn-container{
-  width: 17em;
-  display: flex;
-  background-color: rgba(30, 71, 71, 0.301);
-  border-bottom: solid 1px rgb(102, 98, 92);
-}
-
-
-iframe{
-  max-width: 13em;
+iframe {
+  max-width: 5.8em;
 }
 
 #list-group li{
-  transform: translateX(-18px);
+  transform: translateX(-1em);
 }
+.top{
+  transform: translate(1.6em,3.5em);
+  font-size: 1.5em;
+  text-shadow: 0 0 12px #fff, 0 0 10px #fff, 0 0 10px #5342a0,
+  0 0 18px #5342a0a2, 0 0 11px #5342a0a2, 0 0 4px #4cd6ad, 0 0 3px #4cd6ad;
 }
 
+.top p{
+ transform: translateX(-0.4em)
+  }
 
+}
 
 @-webkit-keyframes glow {
   from {
