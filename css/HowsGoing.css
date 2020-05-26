@@ -4,7 +4,9 @@
 html {
   scroll-behavior: smooth;
 }
-
+body{
+  height: 100vh;
+}
 #nav {
   background-color: rgba(149, 216, 179, 0.8);
 }
@@ -200,16 +202,16 @@ iframe {
   }
 }
 
-@media screen and (min-width: 600px) {
+/* @media screen and (min-width: 600px) {
 
   iframe {
-    max-width: 18em;
+    max-width: 22em;
 }
 
 .button-image {
   max-width: 65%;
 }
-}
+} */
 
 
 
