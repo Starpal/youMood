@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Condiment|Courgette|ZCOOL+QingKe+HuangYou&display=swap");
-@import url('https://fonts.googleapis.com/css?family=Iceland&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Iceland&display=swap");
 
 html {
   scroll-behavior: smooth;
 }
-body{
+body {
   height: 100vh;
 }
 #nav {
@@ -23,12 +23,11 @@ ul {
 #h1 {
   font-family: "ZCOOL QingKe HuangYou";
   /* font-family: "Iceland"; */
-  text-shadow: 0 0 42px #fff, 0 0 40px #fff, 0 0 30px #e60073,
-  0 0 28px #e60073, 0 0 21px #e60073, 0 0 14px #4cd6ad, 0 0 7px #4cd6ad;
- 
+  text-shadow: 0 0 42px #fff, 0 0 40px #fff, 0 0 30px #e60073, 0 0 28px #e60073,
+    0 0 21px #e60073, 0 0 14px #4cd6ad, 0 0 7px #4cd6ad;
 }
 
-.results{
+.results {
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
@@ -40,26 +39,20 @@ ul {
   font-size: 40px;
   color: rgb(229, 253, 240);
   text-shadow: 3px 3px 3px rgb(150, 12, 214);
-  text-shadow: -2px 0 rgb(150, 12, 214), 0 2px rgb(150, 12, 214), 20px rgb(76, 6, 109);
+  text-shadow: -2px 0 rgb(150, 12, 214), 0 2px rgb(150, 12, 214),
+    20px rgb(76, 6, 109);
 }
 
-.btnContainer{
-  display:flex;
+.btnContainer {
+  display: flex;
   flex-direction: row;
   justify-content: center;
   min-width: 20rem;
 }
 
-.btnDiv{
+.btnDiv {
   max-width: 17em;
   padding-left: 2rem;
-}
-
-.lead {
-  font-family: "Courgette";
-  color: white;
-  font-size: 60px;
-  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
 #list-group {
@@ -71,14 +64,13 @@ ul {
     linear-gradient(127deg, rgba(0, 255, 0, 0.425), rgba(0, 255, 0, 0) 70.71%),
     linear-gradient(336deg, rgba(0, 0, 255, 0.486), rgba(0, 0, 255, 0) 70.71%);
   border-radius: 30%;
-  width: auto; 
+  width: auto;
 }
 
-#list-group li{
+#list-group li {
   text-decoration-color: none;
   color: rgb(96, 209, 147);
   text-shadow: 3px 3px 3px rgb(133, 38, 177);
-  
 }
 
 main {
@@ -106,50 +98,59 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 0px 100px 0 100px; 
+  margin: 0px 100px 0 100px;
 }
 
-.top{
-  color:rgba(10, 10, 9, 0.596);
+.top {
+  color: rgba(10, 10, 9, 0.596);
   float: right;
   font-size: 1.8em;
   text-shadow: 0 0 12px #fff, 0 0 10px #fff, 0 0 10px #5342a0,
-  0 0 18px #5342a0a2, 0 0 11px #5342a0a2, 0 0 4px #4cd6ad, 0 0 3px #4cd6ad;
+    0 0 18px #5342a0a2, 0 0 11px #5342a0a2, 0 0 4px #4cd6ad, 0 0 3px #4cd6ad;
   transform: translate(1.8em, 3.3em);
 }
 
-.top p{
-font-size: 0.7em;
-font-weight: bold;
-font-family: 'Iceland';
-text-decoration: underline;
-transform: translateX(-0.4em)
+.top p {
+  font-size: 0.7em;
+  font-weight: bold;
+  font-family: "Iceland";
+  text-decoration: underline;
+  transform: translateX(-0.4em);
 }
 
-.fa-angle-down{
+.fa-angle-down {
   font-size: 2.5em;
+}
+
+.loading {
+  font-family: "Courgette";
+  color: rgba(238, 241, 20, 0.349);
+  font-size: 1.8em;
+  text-shadow: 0 0 12px rgb(235, 177, 69), 0 0 10px rgb(235, 177, 69),
+    0 0 10px #5342a0, 0 0 18px #5342a0a2, 0 0 11px #5342a0a2, 0 0 4px #4cd6ad,
+    0 0 3px #4cd6ad;
 }
 
 @media screen and (max-width: 600px) {
   #animation {
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-  #h1 { 
+  #h1 {
     font-size: 3.5rem;
   }
 
-  #h2 { 
+  #h2 {
     font-size: 1.5rem;
     transform: translateY(13px);
   }
-  
-  .btnDiv{
+
+  .btnDiv {
     max-width: 10rem;
   }
-  
+
   .button-image {
     border-radius: 50%;
     border: 2px solid rgba(164, 199, 109, 0.8);
@@ -157,48 +158,45 @@ transform: translateX(-0.4em)
     float: left;
     transform: translateY(1px);
   }
-  
+
   button {
     max-width: 135px;
     padding-left: 20px;
   }
-  
-  .btn-container{
+
+  .btn-container {
     width: 17em;
     display: flex;
   }
-  
-  /* .lead {
-    font-family: "Courgette";
-    color: white;
-    font-size: 60px;
-    text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -2px black;
-  } */
-  
-  .results h1{
+
+  .results h1 {
     font-size: 3.5rem;
   }
-  
-  .fa-angle-down{
+
+  .fa-angle-down {
     font-size: 0.9em;
   }
 
-iframe {
-  max-width: 5.8em;
-}
+  iframe {
+    max-width: 5.8em;
+  }
 
-#list-group li{
-  transform: translateX(-0.3em);
-}
-.top{
-  transform: translate(2em,4.5em);
-  font-size: 1.5em;
-  text-shadow: 0 0 12px #fff, 0 0 10px #fff, 0 0 10px #5342a0,
-  0 0 18px #5342a0a2, 0 0 11px #5342a0a2, 0 0 4px #4cd6ad, 0 0 3px #4cd6ad;
-}
+  #list-group li {
+    transform: translateX(-0.3em);
+  }
+  .top {
+    transform: translate(2em, 4.5em);
+    font-size: 1.5em;
+    text-shadow: 0 0 12px #fff, 0 0 10px #fff, 0 0 10px #5342a0,
+      0 0 18px #5342a0a2, 0 0 11px #5342a0a2, 0 0 4px #4cd6ad, 0 0 3px #4cd6ad;
+  }
 
-.top p{
- transform: translateX(-0.4em)
+  .top p {
+    transform: translateX(-0.4em);
+  }
+
+  .loading {
+    font-size: 1.3em;
   }
 }
 
@@ -213,7 +211,6 @@ iframe {
       0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #66e6bf, 0 0 90px #66e6bf;
   }
 }
-
 
 @keyframes bounce-in-bottom {
   0% {

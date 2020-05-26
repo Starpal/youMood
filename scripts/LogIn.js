@@ -45,7 +45,7 @@ let validationMessage = () => {
   setTimeout(function () {
     section.innerHTML="";
     section.innerHTML =  `<video autoplay>
-    <source src="./img/northern-lights-night.mp4#t=2" type="video/mp4">
+    <source src="./img/northern-lights-night.mp4#t=1" type="video/mp4">
     </video>`
   }, 1200); 
   

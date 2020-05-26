@@ -13,6 +13,8 @@ let meditationArray = ["https://cors-anywhere.herokuapp.com/https://api.deezer.c
 let onFireArray =["https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/152/artists", "https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/464/artists"];
 
 function getData(arr) {
+  let loader = `<div class="loading">..loading..</div>`;
+  document.getElementById('list-group').innerHTML = loader;
   fetch(arr, {
       headers: {
         'Content-Type': 'application/json',
@@ -29,6 +31,7 @@ function getData(arr) {
       let fullArstistsData = data.data[Math.floor(Math.random() * data.data.length)];
       artistsArray.push(fullArstistsData)
       artistsArray.forEach((item) => getTracklistLink(item))
+
     })
     .catch(error => console.error(error));
 }
@@ -55,7 +58,7 @@ function getTracklistLink(item) {
     })
     .then(() => {
       let ul = document.getElementById("list-group");
-      
+      ul.innerHTML = ""
       tracklistLinks.forEach(link => {
         list.innerHTML = `<iframe scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&size=small&autoplay=false&playlist=true&color=ff0000&layout=dark&size=medium&type=tracks&id=${link}&app_id=1" width="650" height="91"></iframe>`
         tracklistLinks.pop()
@@ -64,6 +67,7 @@ function getTracklistLink(item) {
     })
     .catch(error => console.error(error));
 }
+
 
 showLinksButton.addEventListener("click", function(){
   getData(rainArray[Math.floor(Math.random()*rainArray.length)])
