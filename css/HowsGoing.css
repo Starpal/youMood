@@ -198,18 +198,17 @@ iframe {
 .top p{
  transform: translateX(-0.4em)
   }
-
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 600px) {
+
   iframe {
-      max-width: 15em;
+    max-width: 18em;
 }
+
 .button-image {
   max-width: 65%;
 }
-
-
 }
 
 
