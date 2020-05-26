@@ -57,7 +57,7 @@ function getTracklistLink(item) {
       let ul = document.getElementById("list-group");
       
       tracklistLinks.forEach(link => {
-        list.innerHTML = `<iframe scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&size=small&autoplay=false&playlist=true&color=ff0000&layout=dark&size=medium&type=tracks&id=${link}&app_id=1" width="600" height="92"></iframe>`
+        list.innerHTML = `<iframe scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&size=small&autoplay=false&playlist=true&color=ff0000&layout=dark&size=medium&type=tracks&id=${link}&app_id=1" width="650" height="92"></iframe>`
         tracklistLinks.pop()
         ul.appendChild(list)
       })

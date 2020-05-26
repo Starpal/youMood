@@ -47,11 +47,11 @@ let validationMessage = () => {
     section.innerHTML =  `<video autoplay>
     <source src="./img/northern-lights-night.mp4#t=2" type="video/mp4">
     </video>`
-  }, 1000); 
+  }, 1200); 
   
   setTimeout(function () {
     window.location.href = "HowsGoing.html"; //redirect to main page 'HowsGoing'
- }, 3500); 
+ }, 4000); 
   }
 
 let mainLogIn = () => {

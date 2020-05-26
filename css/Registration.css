@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Condiment|Courgette|ZCOOL+QingKe+HuangYou&display=swap");
+
 html{
   margin:0;
   padding:0;
@@ -75,8 +77,15 @@ body{
     transform: translate(-50%, -50%);
   } 
 
-  #signUp-video{
+  /* #signUp-video{
     width: 95%;
+  } */
+
+  .info-text{
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    font-family: "ZCOOL QingKe HuangYou";
   }
 
   @media screen and (max-width: 600px) {
@@ -92,6 +101,16 @@ body{
   max-height: 100vh;
   
 }
-
   }
 
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+        0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #4cd6ad, 0 0 70px #4cd6ad;
+    }
+  
+    to {
+      text-shadow: 0 0 30px #fff, 0 0 40px #ff4da6, 0 0 50px #ff4da6,
+        0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #66e6bf, 0 0 90px #66e6bf;
+    }
+  }

@@ -6,36 +6,23 @@ let repeatPassword = document.getElementById("repeat-password");
 let form = document.getElementsByClassName("signup-form")[0]; /*zero para seleccionar solo primer elemento de la clase*/
 let formWrapper = document.getElementsByClassName("form-wrapper")[0];
 let signUpButton = document.getElementsByClassName("button")[0];
-let sectionSignUp = document.getElementById("signUp")
-let usersDB = JSON.parse(localStorage.getItem('users'))
+let sectionSignUp = document.getElementById("signUp");
+let usersDB = JSON.parse(localStorage.getItem('users'));
+let enterBtn = document.getElementsByClassName("enter")[0];
 
 signUpButton.addEventListener("click", function(event){
     event.preventDefault(); //evita que al presionar el boton se me recargue la pagina.SEMPRE PRIMA COSA DA FARE CON EVENTI IN BOTTONI
     deleteErrors();
     if (checkValidUser()){
-        console.log("user registered")
+        //console.log("user registered")
         createUser(userName.value, email.value, password.value, currentUser = true)
-        let div = document.createElement("div")
-        div.innerHTML = `<h2 class="info-text"> Welcome to <em>youMood<em>, ${userName.value.toUpperCase()}!<h2>`
-        form.insertBefore(div, signUpButton)
-        form.removeChild(signUpButton)
-
-        setTimeout(function () {
-            sectionSignUp.innerHTML="";
-            sectionSignUp.innerHTML = 
-            `<video id="signUp-video" autoplay>
-    <source src="./img/Sun_moon.mp4#t=2,8" type="video/mp4">
-    </video>` }, 1000); 
-  setTimeout(function () {
-    window.location.href = "HowsGoing.html"; //redirect to main page 'HowsGoing'
- }, 5000); 
+     validationMessage()
     };
 })
 
 function checkValidUser() {
     //CREA UNA INSTANCIA DE SignupVALIDATOR
     let signUpValidator = new SignUpValidator (userName.value, email.value, password.value, repeatPassword.value);
-
     let usersDB = JSON.parse(localStorage.getItem("users"));
     let validUser = true;
 
@@ -83,8 +70,24 @@ function createUser (name, email, password) {
 
 let validationMessage = () => {
     let div = document.createElement("div")
-    let currentUser = JSON.parse(localStorage.getItem('users'));
-    div.innerHTML = `<h1 class="login"> Hello, welcome to youMood!</h1>`;
-    form.insertBefore(div, logInButton);
+    div.innerHTML = `<h2 class="info-text welcome"> Welcome to <em>you Mood<em>, ${userName.value.toUpperCase()}!<h2>`
+    form.insertBefore(div, signUpButton);
     signUpButton.remove()
+
+    setTimeout(function () {
+        window.location.href = "HowsGoing.html"; //redirect to main page 'HowsGoing'
+        }, 2500); 
 }
+
+
+// setTimeout(function () {
+//     sectionSignUp.innerHTML="";
+//     sectionSignUp.innerHTML = 
+//     `<video id="signUp-video" autoplay>
+// <source src="./img/Sun_moon.mp4#t=2,8" type="video/mp4">
+// </video>` }, 1000); 
+
+
+
+
+

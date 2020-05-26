@@ -113,7 +113,7 @@ button {
   font-size: 1.8em;
   text-shadow: 0 0 12px #fff, 0 0 10px #fff, 0 0 10px #5342a0,
   0 0 18px #5342a0a2, 0 0 11px #5342a0a2, 0 0 4px #4cd6ad, 0 0 3px #4cd6ad;
-  transform: translate(1.6em,3em);
+  transform: translate(1.8em, 3.3em);
 }
 
 .top p{
@@ -128,7 +128,7 @@ transform: translateX(-0.4em)
   font-size: 2.5em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   #animation {
   display:flex;
   flex-wrap: wrap;
@@ -201,6 +201,19 @@ iframe {
 
 }
 
+@media screen and (max-width: 900px) {
+  iframe {
+      max-width: 15em;
+}
+.button-image {
+  max-width: 65%;
+}
+
+
+}
+
+
+
 @-webkit-keyframes glow {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
@@ -250,4 +263,3 @@ iframe {
     animation-timing-function: ease-out;
   }
 }
-
