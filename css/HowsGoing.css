@@ -202,19 +202,6 @@ iframe {
   }
 }
 
-/* @media screen and (min-width: 600px) {
-
-  iframe {
-    max-width: 22em;
-}
-
-.button-image {
-  max-width: 65%;
-}
-} */
-
-
-
 @-webkit-keyframes glow {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
