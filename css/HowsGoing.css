@@ -124,9 +124,9 @@ button {
 
 .loading {
   font-family: "Courgette";
-  color: rgba(238, 241, 20, 0.349);
+  color: rgba(41, 41, 37, 0.637);
   font-size: 1.8em;
-  text-shadow: 0 0 12px rgb(235, 177, 69), 0 0 10px rgb(235, 177, 69),
+  text-shadow: 0 0 12px rgb(235, 224, 69), 0 0 10px rgb(235, 177, 69),
     0 0 10px #5342a0, 0 0 18px #5342a0a2, 0 0 11px #5342a0a2, 0 0 4px #4cd6ad,
     0 0 3px #4cd6ad;
 }
