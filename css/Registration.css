@@ -6,17 +6,16 @@ html{
 }
 
 body{
-  height: 100%;
+  height: 100vh;
   background-image: url("../img/Audio-Waveforms-Featued-Image.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  overflow: hidden;
+  overflow: scroll;
 }
 
-
 .main-forms {
-    margin-top: 75px;
+    /* margin-top: 75px; */
     padding: 30px;
   }
   
