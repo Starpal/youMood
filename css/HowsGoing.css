@@ -98,7 +98,11 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 0px 100px 0 100px;
+  margin: 0px 10em 0 10em;
+}
+
+.btn-container {
+ padding-top: 2em;
 }
 
 .top {
@@ -167,6 +171,7 @@ button {
   .btn-container {
     width: 17em;
     display: flex;
+    padding: 0;
   }
 
   .results h1 {

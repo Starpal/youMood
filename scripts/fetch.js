@@ -2,15 +2,20 @@ let showLinksButton = document.getElementById("button-image1");
 let showLinksButton2 = document.getElementById("button-image2");
 let showLinksButton3 = document.getElementById("button-image3");
 let showLinksButton4 = document.getElementById("button-image4");
-
+let showLinksButton5 = document.getElementById("button-image5");
+let showLinksButton6 = document.getElementById("button-image6");
+let showLinksButton7 = document.getElementById("button-image7");
 let list = document.createElement("li");
 
 const tracklistLinks = [];
 
-let rainArray = ['https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/153/artists','https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/129/artists', 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/466/artists', 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/98/artists', "https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/75/artists"];
-let sunnyArray = ["https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/132/artists", "https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/71/artists", "https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/169/artists", "https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/85/artists", "https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/67/artists", "https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/106/artists"];
+let rainArray = ["https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/153/artists","https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/129/artists", "https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/466/artists", "https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/98/artists", "https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/75/artists"];
+let sunnyArray = ["https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/132/artists", "https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/71/artists", "https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/169/artists", "https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/85/artists", "https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/67/artists"];
 let meditationArray = ["https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/98/artists"];
-let onFireArray =["https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/152/artists", "https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/464/artists"];
+let onFireArray = ["https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/152/artists", "https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/464/artists"];
+let electroArray = ["https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/106/artists"]
+let broArray = ["https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/116/artists", "https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/165/artists"]
+let whateverArray = ["https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/0/artists"]
 
 function getData(arr) {
   let loader = `<div class="loading">..loading..</div>`;
@@ -83,4 +88,16 @@ showLinksButton3.addEventListener("click", function(){
 
 showLinksButton4.addEventListener("click", function(){
   getData(onFireArray[Math.floor(Math.random()*onFireArray.length)])
+})
+
+showLinksButton5.addEventListener("click", function(){
+  getData(electroArray[Math.floor(Math.random()*electroArray.length)])
+})
+
+showLinksButton6.addEventListener("click", function(){
+  getData(broArray[Math.floor(Math.random()*broArray.length)])
+})
+
+showLinksButton7.addEventListener("click", function(){
+  getData(whateverArray[Math.floor(Math.random()*whateverArray.length)])
 })
