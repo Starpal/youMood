@@ -57,17 +57,6 @@ a {
   font-weight: bold;
 }
 
-/* .btnBox {
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
-  font-size: 1.7em;
-  left: 10%;
-  bottom: -75vh;
-  color: rgba(240, 242, 243, 0.596);
-  font-family: "ZCOOL QingKe HuangYou";
-  border-style: hidden;
-} */
-
 .btnBox{
   position: absolute;
   top: 87%;
