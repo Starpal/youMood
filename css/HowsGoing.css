@@ -99,6 +99,8 @@ button {
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: 0px 10em 0 10em;
+  /* height: 44em;
+   overflow: scroll; // cudiado en mobile here */ 
 }
 
 .btn-container {

@@ -41,14 +41,7 @@ let validationMessage = () => {
   let div = document.createElement("div");
   div.innerHTML = `<h2 class="info-text"> Welcome back, ${userName.value.toUpperCase()}!</h2>`;
   form.appendChild(div, logInButton);
- 
-  // setTimeout(function () {
-  //   section.innerHTML="";
-  //   section.innerHTML =  `<video autoplay>
-  //   <source src="./img/northern-lights-night.mp4#t=1" type="video/mp4">
-  //   </video>`
-  // }, 1200); 
-  
+
   setTimeout(function () {
     window.location.href = "HowsGoing.html"; //redirect to main page 'HowsGoing'
  }, 2000); 

@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Condiment|Courgette|ZCOOL+QingKe+HuangYou&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Iceland&display=swap");
+
 #nav {
   background-color: rgba(149, 216, 179, 0.8);
 }
@@ -18,7 +20,7 @@ body {
   transform: translate(-50%, -50%);
 }
 .view {
-  background-image: url("../img/moonColorednew.png");
+  background-image: url("../img/moonColorednew.jpeg");
   height: 100%;
   background-size: cover;
   background-position: center;
@@ -28,7 +30,7 @@ body {
 }
 
 #main-image {
-  background-size: 100%;
+  background-size: 100vh;
 }
 
 .mask > h1 {
@@ -40,12 +42,6 @@ body {
   font-family: "Courgette";
   color: rgb(96, 209, 147);
   text-shadow: 3px 3px 3px rgb(133, 38, 177);
-}
-
-.moods {
-  position: relative;
-  text-align: center;
-  color: white;
 }
 
 #text {
@@ -61,4 +57,31 @@ a {
   font-weight: bold;
 }
 
+/* .btnBox {
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  font-size: 1.7em;
+  left: 10%;
+  bottom: -75vh;
+  color: rgba(240, 242, 243, 0.596);
+  font-family: "ZCOOL QingKe HuangYou";
+  border-style: hidden;
+} */
 
+.btnBox{
+  position: absolute;
+  top: 87%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "ZCOOL QingKe HuangYou";
+  font-size: 1.5em;
+  color: rgba(240, 242, 243, 0.596);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+@media screen and (max-width: 600px) {
+  .btnBox{
+    font-size: 0.8em;
+     }
+  }

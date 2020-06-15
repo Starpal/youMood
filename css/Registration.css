@@ -15,7 +15,6 @@ body{
 }
 
 .main-forms {
-    /* margin-top: 75px; */
     padding: 30px;
   }
   
@@ -75,10 +74,6 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
   } 
-
-  /* #signUp-video{
-    width: 95%;
-  } */
 
   .info-text{
     -webkit-animation: glow 1s ease-in-out infinite alternate;

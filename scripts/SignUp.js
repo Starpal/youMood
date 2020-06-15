@@ -36,7 +36,7 @@ function checkValidUser() {
         validUser=false
     }
     if(!signUpValidator.checkPassword()){
-        signUpValidator.errorCreator("Please insert a valid password. Must be of minimum 6 characters length", password)
+        signUpValidator.errorCreator("Please insert a valid password. Must be of minimum 6 characters.", password)
         validUser=false
     }
     if(!signUpValidator.checkRepeatPassword()){
@@ -70,24 +70,12 @@ function createUser (name, email, password) {
 
 let validationMessage = () => {
     let div = document.createElement("div")
-    div.innerHTML = `<h2 class="info-text welcome"> Welcome to <em>you Mood<em>, ${userName.value.toUpperCase()}!<h2>`
+    div.innerHTML = `<h2 class="info-text welcome"> Welcome to <em>youMood<em>, ${userName.value.toUpperCase()}!<h2>`
     form.insertBefore(div, signUpButton);
     signUpButton.remove()
 
     setTimeout(function () {
         window.location.href = "HowsGoing.html"; //redirect to main page 'HowsGoing'
-        }, 2500); 
+        }, 2000); 
 }
-
-
-// setTimeout(function () {
-//     sectionSignUp.innerHTML="";
-//     sectionSignUp.innerHTML = 
-//     `<video id="signUp-video" autoplay>
-// <source src="./img/Sun_moon.mp4#t=2,8" type="video/mp4">
-// </video>` }, 1000); 
-
-
-
-
 
